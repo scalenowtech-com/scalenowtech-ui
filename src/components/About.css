@@ -1,0 +1,113 @@
+.about_section{
+    /* display: flex;
+    align-items: center; */
+    background: #002d70;
+}
+
+
+.about-container{
+    width: 85%;
+    /* min-height: 80vh; */
+    background-color: white;
+    box-shadow: 24px 24px 30px #6d8dad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-image: url('../../public/2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+.text-container h1{
+    font-size: 70px;
+    padding: 20px 0px;
+    font-size: 900;
+    font-weight: 700;
+    color: #fff;
+}
+.about_text {
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 50px 0px;
+    background-color: #002d70;
+    border: 2px solid #fff;
+    color: white;
+    border-radius: 100px;
+    transition: .3s all ease;
+}
+.text-container a:hover{
+    background-color: transparent;
+    color: #002d70;
+    background: #fff;
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{         
+        width: 400px;
+        height: 400px;
+        border-radius: 100%;
+        border: 15px solid #FFF;
+    }
+    .text-container h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+        top: -12%;
+        z-index: 11;
+    }
+    .image-container img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-container {
+        align-items: center;
+    }
+}
+
+/* floating image */
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}

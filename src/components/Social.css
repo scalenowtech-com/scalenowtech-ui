@@ -1,0 +1,49 @@
+.sticky-social{
+  position: fixed;
+  top: 150px;
+  right: 0px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+.social{
+  list-style:none;
+}
+.social li{
+  padding:10px 10px;
+  font-size:25px;
+  transition:all 0.8s ease-in-out;
+}
+.social li:hover{
+    margin-left:-30px;
+    box-shadow:2px 5px 10px grey;
+}
+.social li:hover .fa{
+    margin-right:70px;
+}
+.sticky-social .fa{
+  color:#fff;
+  transition:all 0.8s ease-in-out;
+}
+.sticky-social .fb{
+  background-color:#3C5A98;
+}
+.sticky-social .twitter{
+    background-color:#1EA1F2;
+}
+.sticky-social .insta{
+    background-color:#DC4F42;
+}
+.sticky-social .pin{
+    background-color:#CB2128;
+}
+.sticky-social .vim{
+    background-color: #0e76a8;
+}
+.sticky-social .wp{
+  background-color:#25D366;
+}
+.sticky-social .call{
+  background-color:#037a2f;
+}
+
