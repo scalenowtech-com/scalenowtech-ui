@@ -20,6 +20,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }

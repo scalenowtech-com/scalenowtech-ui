@@ -3,15 +3,11 @@ import "./components/About.css";
 import Slideshow from "./components/aboutslider";
 
 const About = () => {
-    return (
-        <section className="about_section" id="about">
-            
-            
-           
-                <Slideshow/>
-       
-        </section>
-    );
+  return (
+    <section className="about_section" id="about">
+      <Slideshow />
+    </section>
+  );
 };
 
 export default About;
