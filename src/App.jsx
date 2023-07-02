@@ -1,33 +1,32 @@
 import React from "react";
-import Home from "./Home";
-import About from "./About";
-import Header from "./components/Header";
-import Contact from "./Contact";
-import Services from "./Services";
-import Testimonial from "./components/Testimonial";
-import Social from "./Social";
-import Blogs from "./Blogs";
-import Gallery from "./components/Gallery";
-import Footer from "./components/Footer";
-import Logoslider from "./components/Logoslider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Mainpage = () => {
+import Home from "./pages/home";
+import Discover from "./pages/discover";
+import Webdesign from "./pages/webdesign";
+import Appdev from "./pages/appdev";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ScrollTop from "./components/ScrollTop";
+
+const App = () => {
   return (
     <>
-      <Social />
-      <Header />
-      <Home />
-      <Services />
-      <Testimonial />
-      <Logoslider />
-      <About />
-      <Blogs />
-      <Gallery />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/discover" element={<Discover />} />
+          <Route path="/web-dev" element={<Webdesign />} />
+          <Route path="/app-dev" element={<Appdev />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+        <Footer />
+        <ScrollTop />
+      </BrowserRouter>
     </>
   );
 };
 
-export default Mainpage;
+export default App;

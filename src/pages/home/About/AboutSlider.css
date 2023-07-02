@@ -1,0 +1,29 @@
+.about_slider_div {
+  display: flex;
+  flex-direction: row;
+  padding: 90px 50px;
+}
+
+.carousel-control-next-icon {
+  display: none;
+}
+
+.carousel-control-prev-icon {
+  display: none;
+}
+.carousel-indicators [data-bs-target] {
+  display: none;
+}
+.about_slider_div h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+}
+.about_slider_div a {
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  font-size: 16px;
+  width: fit-content;
+  padding: 15px;
+}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MultiSelect } from "react-multi-select-component";
-import "./Contact.css";
 
 const options = [
   { label: "Software Services", value: "software Services" },
