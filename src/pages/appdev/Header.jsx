@@ -16,6 +16,12 @@ const Header = () => {
               providing full-cycle mobile app development solutions that benefit
               a huge number of people & give a good return on investment.
             </p>
+            <p className="hero-text">
+              At Scalenow, we specialize in turning your innovative ideas into
+              fully functional and visually stunning mobile applications. Our
+              app development services are designed to provide a soothing user
+              experience and help you reach your target audience effectively.
+            </p>
 
             {/* <a href="#" className="btn btn-outline">Free Consultation</a> */}
             <a href="#" className="btn btn-primary">

@@ -5,7 +5,7 @@ import Services from "./Services";
 import WhyChoose from "./WhyChoose";
 import TechStack from "./TechStack";
 
-const Webdesignhome = () => {
+const WebDev = () => {
   return (
     <>
       <HeroSection />
@@ -16,4 +16,4 @@ const Webdesignhome = () => {
   );
 };
 
-export default Webdesignhome;
+export default WebDev;

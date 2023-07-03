@@ -10,9 +10,9 @@ const Appdevelopment = () => {
   return (
     <>
       <Header />
+      <TechStack />
       <Services />
       <WhyChoose />
-      <TechStack />
       <DevProcess />
     </>
   );
