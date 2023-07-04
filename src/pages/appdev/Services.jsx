@@ -1,8 +1,12 @@
 import React from "react";
-import androidImage from "../../assets/appdev/android2.png";
-import flutterIcon from "../../assets/appdev/flutter_icon.png";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+import androidMobileImage from "../../assets/appdev/android_mobile2.png";
+import android2 from "../../assets/appdev/customized_solutions.png";
+import userCentric from "../../assets/appdev/usercentricdesign.png";
+
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, A11y } from "swiper";
+import ServiceCard from "./ServiceCard";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,57 +18,70 @@ import "swiper/css/scrollbar";
 
 const serviceData = [
   {
-    image: androidImage,
+    image: android2,
     title: "iOS App Development Services",
     description:
       "We specialize in delivering custom iOS software to both first-time entrepreneurs and enterprises across all sectors, all over the globe. Our team of experts will develop your app and ensure that it not only aligns but goes beyond Apple users’ expectations.",
   },
   {
-    image: androidImage,
+    image: androidMobileImage,
     title: "Flutter App Development Services",
     description:
       "We will help you design and develop, test, and launch full-fledged Flutter apps. We will also find the best product-market fit to deploy your application across several platforms seamlessly. Our team of Flutter Android app development and deployment experts can also take your existing Android or iOS application across platforms and operating systems.",
-  },
-  {
-    image: androidImage,
-    title: "On-Demand App Development",
-    description:
-      "Taxi Booking Food Delivery Educational App eWallet App Grocery Delivery",
+    height: 300,
+    width: 400,
   },
 ];
-const ServiceCard = ({ image, title, description }) => {
-  return (
-    <div className="tw-flex">
-      <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <button className="tw-border tw-border-blue-600 tw-px-4 tw-py-2">
-          Enquire Now!
-        </button>
-      </div>
-      <img className="tw-w-20 tw-h-20" src={image} alt={title} />
-    </div>
-  );
-};
 
 export default () => {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination, A11y]}
       spaceBetween={50}
       slidesPerView={1}
+      effect="cards"
+      loop={true}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+      }}
       navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
     >
       {serviceData.map((item, index) => (
         <SwiperSlide key={`service-${index}`}>
           <ServiceCard {...item} />
         </SwiperSlide>
       ))}
+      <SwiperSlide>
+        <div className="tw-flex tw-justify-center tw-gap-20">
+          <div className="tw-max-w-3xl tw-space-y-12 tw-border">
+            <h3 className="tw-text-6xl tw-tracking-wide">
+              On-Demand App Development
+            </h3>
+            <div>
+              {[
+                "Taxi Booking",
+                "Food Delivery",
+                "Educational App",
+                "eWallet App",
+                "Grocery Delivery",
+              ].map((item, index) => (
+                <p key={`service_item-${index}`} className="tw-text-3xl">
+                  <BsFillCheckCircleFill className="tw-inline" /> {item}
+                </p>
+              ))}
+            </div>
+            <button
+              style={{ outline: "2px solid blue" }}
+              className="tw-rounded-full tw-px-4 tw-py-2 tw-text-blue-700"
+            >
+              Enquire Now!
+            </button>
+          </div>
+          <img style={{ height: 280, width: 290 }} src={userCentric} />
+        </div>
+      </SwiperSlide>
       ...
     </Swiper>
   );

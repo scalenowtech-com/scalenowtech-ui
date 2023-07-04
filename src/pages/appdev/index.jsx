@@ -5,6 +5,7 @@ import Services from "./Services";
 import WhyChoose from "./WhyChoose";
 import TechStack from "./TechStack";
 import DevProcess from "./DevProcess";
+import TechFrameworks from "./TechFrameworks";
 
 const Appdevelopment = () => {
   return (
@@ -12,6 +13,7 @@ const Appdevelopment = () => {
       <Header />
       <TechStack />
       <Services />
+      <TechFrameworks />
       <WhyChoose />
       <DevProcess />
     </>
