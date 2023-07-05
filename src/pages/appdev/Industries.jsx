@@ -18,11 +18,11 @@ const IndustriesData = [
 
 const Industries = () => {
   return (
-    <div className="tw-container tw-h-[500px] tw-mx-auto">
-      <div className="tw-daisy-footer tw-flex tw-items-center tw-justify-between tw-h-full tw-p-10 tw-text-base-content">
-        <div className="tw-container tw-w-1/2">
+    <div className="tw-container tw-min-h-fit tw-h-[500px] tw-mx-auto">
+      <div className="tw-daisy-footer tw-flex tw-flex-col sm:tw-flex-row tw-items-center tw-justify-center sm:tw-justify-between tw-h-full tw-p-10 tw-text-base-content">
+        <div className="tw-container sm:tw-w-1/2">
           <h3 className="tw-text-6xl">
-            Mobile apps snapping a range of industries
+            Mobile apps spanning a range of industries
           </h3>
           <p className="tw-text-4xl">
             When it comes to any need related to application development, we
