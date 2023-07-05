@@ -4,7 +4,7 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 const DevProcess = () => {
   return (
     <section className="process-setup nft-align pwa-process">
-      <h1 className="h1 hero-title2">Process Steps</h1>
+      <h1 className="h1 hero-title2 !tw-text-gray-800 !tw-text-6xl">Process Steps</h1>
       <div className="container">
         <div className="row">
           <ul className="process-timeline">
@@ -61,7 +61,7 @@ const DevProcess = () => {
             </li>
           </ul>
           <p className="last_note">
-            <BsFillCheckCircleFill /> Don't let your app idea remain a dream,
+            <BsFillCheckCircleFill className="tw-inline"/> Don't let your app idea remain a dream,
             Choose Scalenow for professional app development services that bring
             your vision to life.Contact us today to discuss your project and
             embark on an exciting journey to success.

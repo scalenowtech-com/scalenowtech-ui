@@ -23,7 +23,7 @@ function Header() {
           <input type="radio" name="slider" id="close-btn" />
           <ul className="nav-links">
             <label htmlFor="close-btn" className="btn close-btn">
-              <BsXCircleFill color="#002d70" />
+              <BsXCircleFill className="tw-inline" color="#002d70" />
             </label>
             <li>
               <a href="#" className="desktop-item">
@@ -37,7 +37,7 @@ function Header() {
                 <div className="content">
                   <div className="group">
                     <h2 className="title">
-                      <BsAndroid2 /> Software Services
+                      <BsAndroid2 className="tw-inline" /> Software Services
                     </h2>
                     <ul className="list">
                       <li>
@@ -81,7 +81,7 @@ function Header() {
                   </div>
                   <div className="group">
                     <h2 className="title">
-                      <BsUbuntu /> Digital Marketing
+                      <BsUbuntu className="tw-inline" /> Digital Marketing
                     </h2>
                     <ul className="list">
                       <li>
@@ -143,7 +143,7 @@ function Header() {
                   </div>
                   <div className="group">
                     <h2 className="title">
-                      <BsPalette /> Collateral Design
+                      <BsPalette className="tw-inline" /> Collateral Design
                     </h2>
                     <ul className="list">
                       <li>
@@ -203,7 +203,7 @@ function Header() {
             </li>
           </ul>
           <label htmlFor="menu-btn" className="btn menu-btn">
-            <BsBorderWidth size="24px" color="#002df7" />
+            <BsBorderWidth className="tw-inline" size="24px" color="#002df7" />
           </label>
         </div>
       </nav>

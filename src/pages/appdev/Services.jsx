@@ -46,6 +46,7 @@ export default () => {
         delay: 1000,
         disableOnInteraction: false,
       }}
+      className="tw-px-24 tw-py-40 tw-bg-gray-100"
       navigation
     >
       {serviceData.map((item, index) => (
@@ -55,7 +56,7 @@ export default () => {
       ))}
       <SwiperSlide>
         <div className="tw-flex tw-justify-center tw-gap-20">
-          <div className="tw-max-w-3xl tw-space-y-12 tw-border">
+          <div className="tw-max-w-3xl tw-space-y-12">
             <h3 className="tw-text-6xl tw-tracking-wide">
               On-Demand App Development
             </h3>
@@ -82,7 +83,6 @@ export default () => {
           <img style={{ height: 280, width: 290 }} src={userCentric} />
         </div>
       </SwiperSlide>
-      ...
     </Swiper>
   );
 };

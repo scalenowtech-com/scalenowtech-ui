@@ -30,7 +30,7 @@ const Services = () => {
                 the latest trends and practices that generate quality leads.{" "}
               </p>
               <p>
-                <BsFillCheckCircleFill /> HTML/CSS
+                <BsFillCheckCircleFill className="tw-inline"/> HTML/CSS
               </p>
             </div>
           </div>
@@ -50,12 +50,12 @@ const Services = () => {
                 advantages for the business.
               </p>
               <p>
-                <BsFillCheckCircleFill /> Next.Js/React.Js/Angular.Js/
+                <BsFillCheckCircleFill className="tw-inline"/> Next.Js/React.Js/Angular.Js/
                 <br />
                 Express/Node.Js/Vue/Svelte.Js
               </p>
               <p>
-                <BsFillCheckCircleFill /> WordPress/PHP/Laravel/Code
+                <BsFillCheckCircleFill className="tw-inline"/> WordPress/PHP/Laravel/Code
                 Ignitor/Cake PHP
               </p>
             </div>

@@ -39,7 +39,7 @@ const TechStack = () => {
         <div className="row">
           <ul className="industry-list align-items-center justify-content-center">
             {TechStackData.map((item, index) => (
-              <li key={`techdata-${index}`} className="industry">
+              <li key={`techdata-${index}`} className="industry tw-z-30 hover:tw-scale-105">
                 <span className="icon tw-cursor-pointer icon1">
                   <img src={item.image} className="tw-h-32 tw-w-32"/>
                 </span>

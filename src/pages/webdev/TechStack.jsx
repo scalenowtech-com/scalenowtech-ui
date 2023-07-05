@@ -25,28 +25,28 @@ const TechStack = () => {
           <div className="col-md-6">
             <ul className="tech_stack_ul">
               <li>
-                <BsFillCheckCircleFill /> Front-end: This encompasses the user
+                <BsFillCheckCircleFill className="tw-inline"/> Front-end: This encompasses the user
                 interface (UI) and user experience (UX) aspects of an
                 application. With HTML, CSS, JavaScript, and front-end we also
                 use frameworks like React, Angular, or Vue.js
               </li>
 
               <li>
-                <BsFillCheckCircleFill /> Back-end: We use popular back-end
+                <BsFillCheckCircleFill className="tw-inline"/> Back-end: We use popular back-end
                 technologies including languages like Python, Java, Ruby, or
                 Node.js, as well as frameworks like Django, Spring, Ruby on
                 Rails, or Express.js.
               </li>
 
               <li>
-                <BsFillCheckCircleFill /> Databases: Data storage and retrieval
+                <BsFillCheckCircleFill className="tw-inline"/> Databases: Data storage and retrieval
                 are critical for many applications. Common types of databases
                 that we use are relational databases ( MySQL, PostgreSQL) and
                 NoSQL databases ( MongoDB, Cassandra).
               </li>
 
               <li>
-                <BsFillCheckCircleFill /> Deployment and DevOps: In the practice
+                <BsFillCheckCircleFill className="tw-inline"/> Deployment and DevOps: In the practice
                 of the deployment, automation, and management of applications,
                 The DevOps Tools we use are Docker, Kubernetes, Jenkins, and
                 Git.

@@ -2,8 +2,10 @@ import React from "react";
 
 const WhyChoose = () => {
   return (
-    <section className="section webhero webhero2 has-bg-image">
-      <h1 className="h1 hero-title2">Why Choose Us</h1>
+    <section className="section !tw-text-gray-600 webhero webhero2 has-bg-image">
+      <h1 className="section !tw-text-gray-700 webhero webhero2 has-bg-image h1 hero-title2">
+        Why Choose Us
+      </h1>
       <div className="container robust-new-services">
         <div className="row">
           <div className="col-md-4 ">
